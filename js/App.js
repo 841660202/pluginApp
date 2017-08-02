@@ -24,7 +24,8 @@ import SimpleTabs from './SimpleTabs';
 import BaiduMap from '../pages/BaiduMap/baiduditu';
 import QRcode from '../pages/QRcode';
 import ScrollHeader from '../pages/ScrollHeader';
-import ScrollMenu from '../pages/ScrollHeader';
+import ScrollMenu from '../pages/ScrollMenu';
+import ScrollMenuVertival from '../pages/ScrollMenuVertival';
 // const resetAction = NavigationActions.reset({
 //     index: 0,
 //     actions: [
@@ -113,6 +114,11 @@ const ExampleRoutes = {
     name: 'Link to ScrollMenu',
     description: 'ScrollMenu page',
     screen: ScrollMenu,
+  },
+  ScrollMenuVertival: {
+    name: 'Link to ScrollMenuVertival',
+    description: 'ScrollMenuVertival page',
+    screen: ScrollMenuVertival,
   },
 };
 
