@@ -16,14 +16,14 @@ import {
     StatusBar,
 } from 'react-native';
 
-import ScrollMenu from '../../Component/ScrollMenu'
+import ScrollMenuVertival from '../../Component/ScrollMenuVertival'
 
 const items = ['关注', '推荐', '热点', '视频', '南京', '社会', '问答', '图片', '娱乐', '科技',
     '汽车', '财经', '军事', '体育', '段子', '美女', '国际', '趣图', '健康', '特卖', '房产'];
 const { width, height } = Dimensions.get('window');
 
 
-export default class testComponent extends Component {
+export default class ScrollMenuVertical extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -43,13 +43,13 @@ export default class testComponent extends Component {
                     barStyle="dark-content"
                     translucent={true}
                 />
-                <ScrollMenu
+                <ScrollMenuVertival
                     items={items}
                     callback={this.onClick.bind(this)}
                     backgroundColor="#ffffff"
                     textColor="#cccccc"
                     selectedTextColor="#FF0000"
-                    itemSpacing={10} />
+                    itemSpacing={0} />
             </View>
 
         );
@@ -64,7 +64,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#F5FCFF',
     },
     welcome: {
-
         fontSize: 20,
         textAlign: 'center',
         margin: 10,
